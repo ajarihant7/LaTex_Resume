@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Arihant Jain
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Arihant Jain}} & Email : \href{mailto:arihantjain2312@gmail.com}{arihantjain2312@gmail.com}\\
+  Mobile : +919101265364
+\end{tabular*}
+
+\section{Career Objective}
+    \resumeSubHeadingListStart
+        \resumeItemListStart
+            \item Looking for a job where I can challenge myself with creative projects and enhance my skills by working under professionals and contributing to the success of the organization.
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Assam Engineering College}{Guwahati, Assam, India}
+      {Bachelor of Engineering in Computer Science and Engineering; Percentage: 66\%}{August 2017 -- Present}
+    
+     \resumeSubheading
+      {Pandu College}{Guwahati, Assam, India}
+      {Class 12th (AHSEC) - PCM, 
+       Percentage: 75.6\%}{May 2016}
+     \resumeSubheading{St. Joseph's High School}{Moranhat, Assam, India}
+     {Class 10th (SEBA), 
+      Percentage: 72.9\%}{May 2014}
+       
+       
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \begin{itemize}
+      \itemsep0em 
+      \item C++, Python, HTML, CSS, JavaScript, Solidity, PHP
+      \item MySQL
+      \item Linux and Windows
+  \end{itemize}
+
+\itemsep0em
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Data Science Bootcamp}{April 2020- June 2020}
+        {IIT GHY}{Guwahati, India}
+        \resumeItemListStart
+            \item Learned Regression models and Basics of Neural network. 
+        \resumeItemListEnd
+    \resumeSubheading
+      {Coding Club}{Assam Engineering College}
+      {Club Secretary July 2019 - June 2020} {}
+      \resumeItemListStart
+        \item Conducted workshops and organised competitions
+      \resumeItemListEnd  
+        {Assistant Member} {June 2018 - June 2019}
+        \resumeItemListStart
+          \item Conducted Python sessions
+          \item Conducted CodeWar 2019(Annual event of Coding Club)
+        \resumeSubHeadingListEnd
+    \resumeSubheading
+      {Tezpur University}{Tezpur, India}
+      {Research Intern}{June 2019 - July 2019}
+      \resumeItemListStart
+        \item Worked on Medical Data Management using Ethereum
+     %   \item Document all related work as per institute's methodology
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {C-DAC}{Assam Engineering College, Guwahati, India}
+      {Cyber Forensics And Cyber Security Trainee}{Feb 2019 - Mar 2019}
+      \resumeItemListStart
+        \item Learned basics of how data recovery and data encryption is done
+        \item Made a project report on how to hide data using Cryptography and Steganography 
+      \resumeItemListEnd  
+    \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeSubItem{Social Media Text Generation(Ongoing)}{A NLP based approach for predicting the next word using the dataset(1.5 million in size in Hinglish language) created by scraping social media.}
+    \resumeSubItem{Predicting Employee Attrition in the Dawn of Recession}{Designed a model to predict employee attrition due to  COVID-19 (dataset was provided by IBM) and had an accuracy of about 85\%}
+    \resumeSubItem{Medical Data Management using Blockchain(Internship Project)}
+      {Designed a smart contract in Solidity for storing medical data of patients and giving access to limited people that are approved by the patients.}
+    
+  \resumeSubHeadingListEnd
+ 
+
+
+%-------------------------------------------
+\comment{
+%----------MOOC's-----------------------
+ 
+ \section{MOOC's And Courses}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Python For Data Science}{NPTEL Course By IITM. Percentage Obtained - 72\%}
+    \resumeSubItem{Machine Learning Workshop}{Two day workshop conducted by AEC Coding Club and FOSS Assam}
+\resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+
+    \resumeSubItem{Intel Edge AI Scholarship Program}
+      {Among many applications, my application got selected for the scholarship}
+      
+    \resumeSubItem{Student Developer}
+      {Participated in Hactoberfest 2019 organised by Digital Ocean}
+ 
+  \resumeSubHeadingListEnd}
+\end{document}
